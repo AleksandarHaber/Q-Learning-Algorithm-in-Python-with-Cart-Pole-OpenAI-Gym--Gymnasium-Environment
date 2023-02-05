@@ -1,5 +1,6 @@
 # Q-Learning-Algorithm-in-Python-with-Cart-Pole-OpenAI-Gym--Gymnasium-Environment
-In this repository, we post the implementation of the Q-Learning (Reinforcement) learning algorithm in Python. The codes are tested in the Cart Pole OpenAI Gym (Gymnasium) environment. The tutorial webpage explaining the posted codes is given here:
+
+This GitHub repository contains the implementation of the Q-Learning (Reinforcement) learning algorithm in Python. The codes are tested in the Cart Pole OpenAI Gym (Gymnasium) environment. The tutorial webpage explaining the posted codes is given here:
 
 https://aleksandarhaber.com/q-learning-in-python-with-tests-in-cart-pole-openai-gym-environment-reinforcement-learning-tutorial/
 
