@@ -78,11 +78,10 @@ plt.figure(figsize=(12, 5))
 # plot the figure and adjust the plot parameters
 plt.plot(Q1.sumRewardsEpisode,color='blue',linewidth=1)
 plt.xlabel('Episode')
-plt.ylabel('Reward')
+plt.ylabel('Sum of Rewards in Episode')
 plt.yscale('log')
-plt.show()
 plt.savefig('convergence.png')
-
+plt.show()
 
 # close the environment
 env1.close()
@@ -91,3 +90,11 @@ np.sum(obtainedRewardsOptimal)
 
 # now simulate a random strategy
 (obtainedRewardsRandom,env2)=Q1.simulateRandomStrategy()
+plt.hist(obtainedRewardsRandom)
+plt.xlabel('Sum of rewards')
+plt.ylabel('Percentage')
+plt.savefig('histogram.png')
+plt.show()
+
+# run this several times and compare with a random learning strategy
+(obtainedRewardsOptimal,env1)=Q1.simulateLearnedStrategy()
